@@ -1,0 +1,25 @@
+cd 大學課程\大三上\人工智慧與機器學習導論\HW1\search
+
+----------------------------------------------------------------------------------
+
+Py -2 pacman.py
+Py -2 pacman.py --layout testMaze --pacman GoWestAgent
+Py -2 pacman.py --layout tinyMaze --pacman GoWestAgent
+Py -2 pacman.py -h
+Py -2 pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+Py -2 pacman.py -l tinyMaze -p SearchAgent
+Py -2 pacman.py -l mediumMaze -p SearchAgent
+Py -2 pacman.py -l bigMaze -z .5 -p SearchAgent
+Py -2 pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+Py -2 pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+Py -2 eightpuzzle.py
+Py -2 pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+Py -2 pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+Py -2 pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+Py -2 pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+Py -2 pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+Py -2 pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+Py -2 pacman.py -l mediumCorners -p AStarCornersAgent
+Py -2 pacman.py -l testSearch -p AStarFoodSearchAgent
+Py -2 pacman.py -l trickySearch -p AStarFoodSearchAgent
+Py -2 pacman.py -l mediumSearch -p AStarFoodSearchAgent

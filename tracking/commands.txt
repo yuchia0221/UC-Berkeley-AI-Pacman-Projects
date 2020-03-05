@@ -1,0 +1,12 @@
+Py -2 busters.py
+Py -2 test.py -t test_cases/q1/1-ExactObserve
+Py -2 test.py -t test_cases/q1/2-ExactObserve
+Py -2 test.py -t test_cases/q2/1-ExactElapse
+Py -2 test.py -t test_cases/q2/2-ExactElapse
+Py -2 busters.py -l smallHunt -p GreedyBustersAgent -n 10
+Py -2 busters.py -l smallHunt -p GreedyBustersAgent -n 10 --frameTime=0
+Py -2 test.py -t test_cases/q4/1-ParticleObserve
+Py -2 test.py -t test_cases/q5/1-ParticleElapse
+Py -2 test.py -t test_cases/q5/2-ParticleElapse
+Py -2 test.py -t test_cases/q6/1-JointParticleObserve
+Py -2 test.py -t test_cases/q7/1-JointParticleElapse

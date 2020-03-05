@@ -1,0 +1,16 @@
+Py -2 gridworld.py -m
+Py -2 gridworld.py -h
+Py -2 gridworld.py -g MazeGrid
+Py -2 gridworld.py -a value -i 100 -k 10
+Py -2 gridworld.py -a value -i 5
+Py -2 gridworld.py -a value -i 100 -g BridgeGrid --discount 0.9 --noise 0.2
+Py -2 gridworld.py -a value -i 100 -g DiscountGrid --discount 0.9 --noise 0.2 --livingReward 0.0
+Py -2 gridworld.py -a q -k 5 -m
+Py -2 gridworld.py -a q -k 100 
+Py -2 gridworld.py -a q -k 50 -n 0 -g BridgeGrid -e 1
+Py -2 crawler.py
+Py -2 pacman.py -p PacmanQAgent -x 2000 -n 2010 -l smallGrid 
+Py -2 pacman.py -p PacmanQAgent -n 10 -l smallGrid -a numTraining=10
+Py -2 pacman.py -p ApproximateQAgent -x 2000 -n 2010 -l smallGrid 
+Py -2 pacman.py -p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -l mediumGrid 
+Py -2 pacman.py -p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -l mediumClassic 
